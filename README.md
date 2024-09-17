@@ -2,7 +2,7 @@
 
 ## Student Name: [Hieu Tam Duong Vu]
 
-## Project Title: [Weather Forecast Application]
+## Project Title: [Your Project Title]
 
 This repository contains my final project for the Python course.
 
