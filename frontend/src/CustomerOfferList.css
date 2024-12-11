@@ -1,0 +1,73 @@
+.customer-offer-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Spacing between cards */
+  padding: 20px;
+  background-color: #f5fafd; /* Soft, neutral background */
+  border-radius: 12px; /* Rounded container corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Individual offer card */
+.offer-card {
+  background: white;
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px; /* Internal spacing */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: left;
+  display: flex;
+  flex-direction: column; /* Stack card content vertically */
+  justify-content: space-between; /* Distribute content evenly */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+}
+
+.offer-card:hover {
+  transform: scale(1.05); /* Slight zoom */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Card heading */
+.offer-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #2c3e50; /* Neutral dark color for text */
+  font-weight: bold; /* Emphasize the title */
+}
+
+/* Price styling */
+.offer-card .price {
+  font-size: 1.2rem;
+  color: #34c759; /* Vibrant green for pricing */
+  font-weight: bold; /* Make prices more noticeable */
+  margin-bottom: 10px; /* Space after price */
+}
+
+/* Card buttons */
+.offer-card button {
+  background-color: #007aff; /* Bright blue for buttons */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Rounded-pill buttons */
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500; /* Slightly bolder text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.offer-card button:hover {
+  background-color: #005eb8; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Optional Delete Button for seller */
+.offer-card .delete-button {
+  background-color: #ff3b30; /* Bright red for delete */
+  margin-top: 10px;
+  padding: 8px 15px;
+  border-radius: 20px; /* Rounded-pill style */
+}
+
+.offer-card .delete-button:hover {
+  background-color: #d92e25; /* Darker red on hover */
+}
